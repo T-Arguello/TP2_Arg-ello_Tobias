@@ -1,0 +1,127 @@
+    1  sudo fdisk -l 
+    2  exit
+    3  sudo fdisk -l
+    4  fdisk /dev/sdd
+    5  sudo fdisk /dev/sdd
+    6  free
+    7  free -h
+    8  sudo mkswap /dev/sdd1
+    9  free -h
+   10  sudo swapon /dev/sdd1
+   11  free -h
+   12  swapon -s
+   13  cat /proc/swaps
+   14  sudo fdisk -l
+   15  sudo fdisk /dev/sdc
+   16  sudo wipefs -a /dev/sdc1
+   17  sudo pvcreat /dev/sdd2 /dev/sdd3 /dev/sdd5 
+   18  sudo pvcreate /dev/sdd2 /dev/sdd3 /dev/sdd5 /dev/sdd6 /dev/sdc1 /dev/sdc2
+   19  pvs
+   20  sudo pvs 
+   21  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+   22  vgs
+   23  sudo vgs
+   24  sudo pvs
+   25  sudo wipefs a- /dev/sdc2
+   26  sudo wipefs -a /dev/sdc2
+   27  sudo pvs
+   28  sudo vgreduce vg_datos /dev/sdc2
+   29  sudo wipefs -a /dev/sdc2
+   30  sudo pvs
+   31  sudo pvcreate /dev/sdc2
+   32  sudo pvs
+   33  sudo vgcreate vg_web /dev/sdc2
+   34  sudo pvs
+   35  sudo lvcreate -L 1G vg_web -n lv_web1
+   36  sudo lvcreate -L 1G vg_web -n lv_web2
+   37  sudo lvcreate -L 1G vg_web -n lv_web3
+   38  sudo lvs
+   39  sudo pvs
+   40  sudo fdisk -l
+   41  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+   42  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+   43  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3 
+   44  200~sudo lsblk -f
+   45  sudo lsblk -f
+   46  exit
+   47  sudo systemcl status sshd
+   48  sudo systemctl status sshd
+   49  ls -l .ssh/
+   50  sudo fdisk -l
+   51  sudo mkfs.ext4 /dev/mapper/vg_web_lv_web1
+   52  exit
+   53  git clone https://github.com/T-Arguello/TP2_Arg-ello_Tobias.git
+   54  cd TP2_Arg-ello_Tobias/
+   55  ls -l
+   56  exit
+   57  fdisk -l
+   58  sudo fdisk -l
+   59  fdisk /dev/sde
+   60  sudo fdisk /dev/sde
+   61  free
+   62  free -h
+   63  sudo swapom /dev/sde1
+   64  sudo swapon /dev/sde1
+   65  sudo swapon /dev
+   66  sudo swapon /dev/sde1
+   67  free -h
+   68  sudo swapon /dev/sde1
+   69  swapon -s
+   70  free -h
+   71  cat /proc/swaps
+   72  sudo fdisk /dev/sde
+   73  exit
+   74  cd TP2_Arg-ello_Tobias/
+   75  ls -l
+   76  sudo fdisk -l
+   77  fdiks /dev/sdd
+   78  sudo fdiks /dev/sdd
+   79  sudo fdisk /dev/sdd
+   80  free -h
+   81  cat /proc/swaps
+   82  sudo fdisk /dev/sdc
+   83  sudo pvs
+   84  sudo fdisk -l
+   85  sudo pvs > pvs.txt
+   86  sudo vgs > vgs.txt
+   87  sudo lvs > lvs.txt
+   88  hystory > historial_lvm.txt
+   89  history > historial_lvm.txt
+   90  ls -l
+   91  git add .
+   92  git commit -m "Archivos LVM"
+   93  git config --global user.email "tobiasarguello614@gmail.com
+   94  "
+   95  git config --global user.name "T-Arguello"
+   96  git add .
+   97  git commit -m "Archivos LVM"
+   98  git push
+   99  ssh-keyhen -t ed25519
+  100  ssh-keygen -t ed25519
+  101  ls -l .ssh/
+  102  sudo systemctl status sshd
+  103  cat .ssh/id_ed25519.pub
+  104  ls -l .ssh/
+  105  exit
+  106  ssh-keygen -t ed25519
+  107  ls -l .ssh/
+  108  cat ssh/id_ed25519.pub
+  109  cat .ssh/id_ed25519.pub
+  110  cd TP2_Arg-ello_Tobias/
+  111  ls -l
+  112  git push
+  113  git remote -v
+  114  cd ..
+  115  rm -rf
+  116  TP2_Arg-ello_Tobias/
+  117  ls
+  118  rm -rf TP2_Arg-ello_Tobias
+  119  ls
+  120  ls -l
+  121  exit
+  122  git clone git@github.com:T-Arguello/TP2_Arg-ello_Tobias.git
+  123  cd TP2_Arg-ello_Tobias
+  124  sudo pvs > pvs.txt
+  125  sudo vgs > vgs.txt
+  126  sudo lvs > lvs.txt
+  127  history > historial_lvm.txt
